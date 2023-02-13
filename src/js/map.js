@@ -1,17 +1,19 @@
 export default class ErrorRepository {
-  constructor() {
+  constructor(errors = []) {
     this.errors = new Map();
+    errors.forEach(
+      (error) => {
+        const { code, description } = error;
+        this.add(+code, description);
+      },
+    );
   }
 
-  add(number, string) {
-    this.errors.set(number, string);
+  add(code, description) {
+    this.errors.set(code, description);
   }
 
   translate(code) {
-    if (!this.errors.has(code)) {
-      return 'Unknown error';
-    }
-
-    return this.errors.get(code);
+    return this.errors.get(code) || 'Unknown error';
   }
 }

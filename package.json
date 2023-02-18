@@ -1,5 +1,5 @@
 {
-  "name": "class-ajs",
+  "name": "ajs-Set_Map",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -46,5 +46,5 @@
     "url": "https://github.com/natacall/class-ajs/issues"
   },
   "homepage": "https://github.com/natacall/class-ajs#readme",
-  "description": ""
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/0eql8d2mwdn87bmx?svg=true)](https://ci.appveyor.com/project/natacall/ajs-set-map)"
 }
